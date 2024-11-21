@@ -1,0 +1,116 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Modern font for a fresh look */
+    background: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    color: #444; /* Slightly darker neutral text color */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 450px;
+    margin: 50px auto; /* Space from top for a more balanced view */
+    background: rgb(255, 255, 255);
+    border-radius: 15px; /* Heavily rounded corners for uniqueness */
+    padding: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.7); /* Neomorphic effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+.container:hover {
+    transform: translateY(-8px); /* Lift effect */
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15), -8px -8px 20px rgba(255, 255, 255, 0.8); /* Enhanced depth */
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+    background: -webkit-linear-gradient(45deg, #007bff, #00c6ff); /* Gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Only the text is filled with the gradient */
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    gap: 12px; /* Space between input and button */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 25px; /* Capsule-shaped input */
+    font-size: 16px;
+    background: #f5f5f5;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.9); /* Neomorphic input effect */
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    background: #e6f7ff; /* Subtle background change on focus */
+    box-shadow: inset 2px 2px 8px rgba(0, 123, 255, 0.2), inset -2px -2px 8px rgba(255, 255, 255, 0.9);
+}
+
+button {
+    padding: 12px 20px;
+    background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient for a bold button look */
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* Capsule-shaped button */
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px rgba(255, 255, 255, 0.1); /* Slight button depth */
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #0056b3, #003d80); /* Darker gradient on hover */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25), -5px -5px 15px rgba(255, 255, 255, 0.1); /* Enhance shadow on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners for items */
+    background: linear-gradient(145deg, #ffffff, #f3f3f3); /* Gradient for items */
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1), -3px -3px 8px rgba(255, 255, 255, 0.8); /* Neomorphic item effect */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    background: #e6f7ff; /* Light blue tint on hover */
+    box-shadow: 3px 3px 8px rgba(0, 123, 255, 0.2), -3px -3px 8px rgba(255, 255, 255, 0.8);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999; /* Muted color for completed items */
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input[type="text"],
+    button {
+        font-size: 14px;
+    }
+}
