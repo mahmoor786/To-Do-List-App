@@ -22,7 +22,7 @@ This is a simple and elegant To-Do List web app built with HTML, CSS, and JavaSc
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/todo-list-app.git
+   git clone https://github.com/mahmoor786/To-Do-List-website-using-HTML-CSS-and-JavaScript.git
 2. Open index.html in your web browser to start using the app.
    
 ## Installation
